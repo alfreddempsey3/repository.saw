@@ -65,10 +65,10 @@ BASE2 = "plugin://plugin.video.youtube/channel/"
 
 # Set each of your YouTube playlist id's
 YOUTUBE_CHANNEL_ID_1 = "PLQSWZu4MBJBAYyLSkqQG15mGlSu3540DA"
-YOUTUBE_CHANNEL_ID_2 = "PLnDj4GODT_QpaemQB4395I9wRwCnZvx6x"
-YOUTUBE_CHANNEL_ID_3 = "PLfb8E7lARImvzrAq0O6jyQcstw7aKZvLq"
-YOUTUBE_CHANNEL_ID_4 = "PLlJDPmb6OexrDnAFNBNJez8zRe4EECDZY"
-YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
+YOUTUBE_CHANNEL_ID_2 = "Xw5AiRVqfqk"
+YOUTUBE_CHANNEL_ID_3 = "eRvfxWRi6qQ&list=PLfhmU5Xe1FFkfZVtXKQDB8WQhS2UCoeVB"
+#YOUTUBE_CHANNEL_ID_4 = "PLlJDPmb6OexrDnAFNBNJez8zRe4EECDZY"
+#YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
 
 #----------------------------------------------------------------
 
@@ -95,39 +95,39 @@ YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
 def Main_Menu():
 
 # If debug mode is enabled show the koding tutorials
-    if debug == 'true':
-        Add_Dir ( '[COLOR=lime]Koding Tutorials[/COLOR]', '', "tutorials", True, '', '', '' )
-    else:
-        Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
+    #if debug == 'true':
+        #Add_Dir ( '[COLOR=lime]Koding Tutorials[/COLOR]', '', "tutorials", True, '', '', '' )
+    #else:
+        #Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
     
 # An example title/message we're going to send through to a popup dialog in the first Add_Dir item
-    my_message= "{'title' : 'Support & Suggestions', 'msg' : \"If you come across any online content you'd like to get added please use the support thread at noobsandnerds.com and I'll be happy to look into it for you.\"}"
+    #my_message= "{'title' : 'Support & Suggestions', 'msg' : \"If you come across any online content you'd like to get added please use the support thread at noobsandnerds.com and I'll be happy to look into it for you.\"}"
 
-    Add_Dir(
-        name="Support/Suggestions", url=my_message, mode="simple_dialog", folder=False,
-        icon="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-087_info-512.png")
+    #Add_Dir(
+        #name="Support/Suggestions", url=my_message, mode="simple_dialog", folder=False,
+        #icon="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-087_info-512.png")
         
 # Add some YT Playlists (see we're using BASE as the url)
     Add_Dir( 
-        name="Aphex Twin", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
-        icon="http://images.all-free-download.com/images/graphiclarge/aphex_twin_121719.jpg")
+        name="Aphex Twin PLaylist", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
+        icon="https://www.google.ie/search?q=free+aphex+icons&safe=off&rlz=1C1CHBF_enIE694IE694&tbm=isch&imgil=pSuqxuc1N_7eJM%253A%253B2cM")
 
     Add_Dir( 
-        name="Fly TV", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
-        icon="https://yt3.ggpht.com/-ldvmtOEepRk/AAAAAAAAAAI/AAAAAAAAAAA/OOEsBMgcqQI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        name="Aphex Twin Selected Ambient Works 85-92", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+        icon="http://static.stereogum.com/uploads/2015/01/Aphex-Logo.jpg")
 
     Add_Dir( 
-        name="Fishing videos from DALLMYD", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
-        icon="https://yt3.ggpht.com/-HB9PwSeNSE8/AAAAAAAAAAI/AAAAAAAAAAA/LmADXY0mgbA/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        name="Aphex Twin Videos dir by Chris Cunningham", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+        icon="https://upload.wikimedia.org/wikipedia/en/9/9b/WAP105.jpeg")
 
-    Add_Dir( 
-        name="Sea Fishing videos from TAFishing", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
-        icon="https://yt3.ggpht.com/-P2USlMtGNXo/AAAAAAAAAAI/AAAAAAAAAAA/sDV3FPYrotM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+    #Add_Dir( 
+        #name="Sea Fishing videos from TAFishing", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
+        #icon="https://yt3.ggpht.com/-P2USlMtGNXo/AAAAAAAAAAI/AAAAAAAAAAA/sDV3FPYrotM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 
 # Add some YT channels (see we're using BASE2 as the url for this one)
-    Add_Dir( 
-        name="Uncut Angling Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
-        icon="https://yt3.ggpht.com/-8Rt7LjDZrtU/AAAAAAAAAAI/AAAAAAAAAAA/-0-9PLOJWXM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+    #Add_Dir( 
+        #name="Uncut Angling Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
+        #icon="https://yt3.ggpht.com/-8Rt7LjDZrtU/AAAAAAAAAAI/AAAAAAAAAAA/-0-9PLOJWXM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 #----------------------------------------------------------------
 # A basic OK Dialog
 @route(mode='koding_settings')
