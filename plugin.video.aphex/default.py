@@ -65,8 +65,8 @@ BASE2 = "plugin://plugin.video.youtube/channel/"
 
 # Set each of your YouTube playlist id's
 YOUTUBE_CHANNEL_ID_1 = "PLQSWZu4MBJBAYyLSkqQG15mGlSu3540DA"
-YOUTUBE_CHANNEL_ID_2 = "Xw5AiRVqfqk"
-YOUTUBE_CHANNEL_ID_3 = "eRvfxWRi6qQ&list=PLfhmU5Xe1FFkfZVtXKQDB8WQhS2UCoeVB"
+YOUTUBE_CHANNEL_ID_2 = "PLDINwRwTatpTgguUWD87TMurRx0j2UKff"
+YOUTUBE_CHANNEL_ID_3 = "UBS4Gi1y_nc&list=PLfhmU5Xe1FFmO46rt2jY2KbLuB3e48aG2"
 #YOUTUBE_CHANNEL_ID_4 = "PLlJDPmb6OexrDnAFNBNJez8zRe4EECDZY"
 #YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
 
@@ -109,16 +109,16 @@ def Main_Menu():
         
 # Add some YT Playlists (see we're using BASE as the url)
     Add_Dir( 
-        name="Aphex Twin PLaylist", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
-        icon="https://www.google.ie/search?q=free+aphex+icons&safe=off&rlz=1C1CHBF_enIE694IE694&tbm=isch&imgil=pSuqxuc1N_7eJM%253A%253B2cM")
+        name="Aphex Twin - Official Video Selection", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
+        icon="https://chloemogg.files.wordpress.com/2017/03/aphex.jpg?w=300&h=300")
 
     Add_Dir( 
-        name="Aphex Twin Selected Ambient Works 85-92", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+        name="Aphex Twin - Selected Ambient Works 85-92", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
         icon="http://static.stereogum.com/uploads/2015/01/Aphex-Logo.jpg")
 
-    Add_Dir( 
-        name="Aphex Twin Videos dir by Chris Cunningham", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
-        icon="https://upload.wikimedia.org/wikipedia/en/9/9b/WAP105.jpeg")
+    #Add_Dir( 
+        #name="Aphex Twin Videos dir by Chris Cunningham", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+        #icon="https://upload.wikimedia.org/wikipedia/en/9/9b/WAP105.jpeg")
 
     #Add_Dir( 
         #name="Sea Fishing videos from TAFishing", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
@@ -126,8 +126,8 @@ def Main_Menu():
 
 # Add some YT channels (see we're using BASE2 as the url for this one)
     #Add_Dir( 
-        #name="Uncut Angling Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
-        #icon="https://yt3.ggpht.com/-8Rt7LjDZrtU/AAAAAAAAAAI/AAAAAAAAAAA/-0-9PLOJWXM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        #name="Best of Aphex Twin", url=BASE2+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+        #icon="http://static.stereogum.com/uploads/2015/01/Aphex-Logo.jpg")
 #----------------------------------------------------------------
 # A basic OK Dialog
 @route(mode='koding_settings')
